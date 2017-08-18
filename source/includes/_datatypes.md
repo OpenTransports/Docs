@@ -12,7 +12,7 @@ center {      // The central point of the agency
 }
 types [       // The types of transports supported by the agency
 	{
-		type int    // The type of the transports (See: Transports types)
+		id   int    // The id of the type of the transports (See: Transports types)
 		name string // A custom display name (Optional: Default to the generic ones)
 		icon string // Generic icon (Optional: Default to the generic ones)
 	}

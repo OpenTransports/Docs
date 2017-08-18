@@ -23,7 +23,7 @@ curl "https://server-url.com/agencies?latitude=48.86&longitude=2.35"
 		},
 		"types": [
 			{
-				"type": 0,
+				"id": 0,
 				"name": "Tram",
 				"icon": "https://server-url.com/medias/ferre/indices-ferres-2017.05/L_T"
 			},
@@ -61,7 +61,7 @@ curl "https://server-url.com/transports?latitude=48.86&longitude=2.35&radius=200
 ```json
 [
 	{
-		"ID": "3764645",
+		"id": "3764645",
 		"agencyID": "FR.Paris.RATP",
 		"type": 3,
 		"name": "LES HALLES - CENTRE GEORGES POMPIDOU",
@@ -70,7 +70,13 @@ curl "https://server-url.com/transports?latitude=48.86&longitude=2.35&radius=200
 			"latitude": 48.86069953105734,
 			"longitude": 2.34956822574239
 		},
-		"passages": [],
+		"informations": [
+			{
+				"title": "Montsouris",
+				"content": ["2 mn", "3 mn"],
+				"timestamp": 123456765
+			}
+		],
 		"iconURL": "https://server-url.com/medias/bus/indices/38genRVB.png"
 	},
 	...
