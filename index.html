@@ -287,7 +287,7 @@
         </span><span class="p">},</span><span class="w">
         </span><span class="s2">"types"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
-                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tram"</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"icon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://server-url.com/medias/ferre/indices-ferres-2017.05/L_T"</span><span class="w">
             </span><span class="p">},</span><span class="w">
@@ -329,7 +329,7 @@
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"ID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3764645"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3764645"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"agencyID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FR.Paris.RATP"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
         </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LES HALLES - CENTRE GEORGES POMPIDOU"</span><span class="p">,</span><span class="w">
@@ -338,7 +338,13 @@
             </span><span class="s2">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">48.86069953105734</span><span class="p">,</span><span class="w">
             </span><span class="s2">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.34956822574239</span><span class="w">
         </span><span class="p">},</span><span class="w">
-        </span><span class="s2">"passages"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"informations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Montsouris"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"2 mn"</span><span class="p">,</span><span class="w"> </span><span class="s2">"3 mn"</span><span class="p">],</span><span class="w">
+                </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">123456765</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
         </span><span class="s2">"iconURL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://server-url.com/medias/bus/indices/38genRVB.png"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="err">...</span><span class="w">
@@ -421,7 +427,7 @@
 <span class="p">}</span>
 <span class="nx">types</span> <span class="p">[</span>       <span class="c1">// The types of transports supported by the agency</span>
     <span class="p">{</span>
-        <span class="kd">type</span> <span class="kr">int</span>    <span class="c1">// The type of the transports (See: Transports types)</span>
+        <span class="nx">id</span>   <span class="kr">int</span>    <span class="c1">// The id of the type of the transports (See: Transports types)</span>
         <span class="nx">name</span> <span class="kr">string</span> <span class="c1">// A custom display name (Optional: Default to the generic ones)</span>
         <span class="nx">icon</span> <span class="kr">string</span> <span class="c1">// Generic icon (Optional: Default to the generic ones)</span>
     <span class="p">}</span>
